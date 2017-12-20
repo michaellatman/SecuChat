@@ -1,0 +1,49 @@
+<com.secuchat.Utils.ResizeView
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="17"
+    android:id="@+id/rootView">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="17"
+        android:divider="@null"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_weight=".2"
+        android:background="@drawable/btn_continue_clicked"
+        android:elevation="0dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText"
+            android:layout_weight="1"
+            android:textColor="#ffffffff"
+            android:textColorHint="#ff646464"
+            android:hint="Enter message.."
+            android:background="#ff151515"
+            android:autoText="true"
+            android:paddingLeft="10dp" />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Send"
+            android:id="@+id/button"
+            android:background="@drawable/btnsendclicked"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</com.secuchat.Utils.ResizeView>

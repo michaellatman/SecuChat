@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="6dip"
+    android:longClickable="false">
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="false"
+        android:text="Description"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

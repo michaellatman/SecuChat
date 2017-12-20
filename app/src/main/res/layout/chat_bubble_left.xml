@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingRight="0dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:background="#ffffffff"
+        android:layout_gravity="left"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/secondLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="false"
+            android:text="Description"
+            android:textSize="18sp"
+            android:layout_below="@+id/user"
+            android:paddingLeft="5dp"
+            android:textColor="#ff1c1c1c"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:gravity="center_vertical"
+            android:text="User"
+            android:textSize="15sp"
+            android:id="@+id/user"
+            android:paddingLeft="5dp"
+            android:textColor="#D50000"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

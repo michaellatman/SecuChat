@@ -1,0 +1,57 @@
+<html>
+	<head></head>
+	<body>
+		<h1>SecuChat Web</h1>
+		<div id="displayChat"></div>
+		<div id="chatbar">
+			<div id="innerChatBar">
+				<input type="text" id="enterText" placeholder="Enter message"/>
+			</div>
+		</div>
+	</body>
+
+
+
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
+	 <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
+	 <script src="app.js"></script>
+
+	 <style>
+	 	#displayChat{
+	 		padding-bottom: 50px;
+	 	}
+		body{
+			margin: 0px;		
+		}
+	 	#chatbar{
+	 		position: fixed;
+	 		bottom: 0;
+	 		background-color: black;
+	 		width: 100%;
+	 		height: 50px;
+	 	}
+	 	#innerChatBar{
+	 		padding-top: 5px;
+	 		padding-left: 5px; 
+	 	}
+	 	#enterText{
+	 		height: 40px;
+	 		width: 99%;
+	 		padding-right-right: 15px;
+	 		background-color: black;
+	 		border: none;
+	 		color: white;
+	 		font-size: 20px;
+
+	 	}
+	 input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+	 </style>
+</html>

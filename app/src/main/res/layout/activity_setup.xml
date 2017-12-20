@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="0dp" tools:context=".Setup"
+    android:background="#ff1c62c1"
+    android:focusable="true">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Nickname"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:layout_above="@+id/nicknameField"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/FloralWhite" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nicknameField"
+        android:layout_above="@+id/imageView"
+        android:hint="Billy Bob"
+        android:textColor="@color/FloralWhite"
+        android:textColorHint="#ffa9a9a9"
+        android:textSize="15sp"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textCapWords" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_above="@+id/generatingText"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Generating Key..."
+        android:id="@+id/generatingText"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:visibility="visible"
+        android:textColor="#ffffffff" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:src="@drawable/check_mark" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Continue"
+        android:id="@+id/btnContinue"
+        android:clickable="false"
+        android:textSize="25dp"
+        android:background="@drawable/btn_continue_clicked"
+        android:textColor="#ffff565a"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:visibility="invisible" />
+
+</RelativeLayout>
